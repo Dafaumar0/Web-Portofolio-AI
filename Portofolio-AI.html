@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio DF</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth; /* Untuk scroll halus ke section */
+            background-color: #F8F8F8; /* Sedikit off-white */
+        }
+        /* Mengatur padding atas untuk konten agar tidak tertutup fixed navbar */
+        main section {
+            padding-top: 6rem; /* Sesuaikan dengan tinggi navbar */
+            padding-bottom: 4rem;
+        }
+        @media (min-width: 768px) {
+            main section {
+                padding-top: 8rem; /* Sesuaikan untuk desktop jika navbar lebih tinggi */
+                padding-bottom: 6rem;
+            }
+        }
+    </style>
+</head>
+<body class="text-black">
+
+    <!-- Fixed Navbar -->
+    <nav class="bg-white shadow-lg fixed top-0 left-0 right-0 z-50 py-4 px-6 md:px-10">
+            <div class="container mx-auto flex justify-between items-center">
+            <a href="#hero" class="text-2xl font-bold text-purple-700 hover:text-purple-900 transition-colors">
+                DAFA UMAR JAFRI</a>
+
+            <div class="hidden md:flex space-x-8">
+                <a href="#tentang-saya" class="text-black hover:text-purple-700 font-medium transition-colors">Tentang</a>
+                <a href="#pendidikan" class="text-black hover:text-purple-700 font-medium transition-colors">Pendidikan</a>
+                <a href="#skill" class="text-black hover:text-purple-700 font-medium transition-colors">Skill</a>
+                <a href="#projek" class="text-black hover:text-purple-700 font-medium transition-colors">Projek</a>
+                <a href="#deskripsi" class="text-black hover:text-purple-700 font-medium transition-colors">Kontak</a>
+            </div>
+            <!-- Hamburger menu for mobile (optional, but good for responsiveness) -->
+            <button class="md:hidden text-black focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section (dapat digabung dengan Tentang Saya) -->
+        <section id="hero" class="relative bg-gradient-to-br from-white via-purple-50 to-white min-h-screen flex items-center justify-center text-center">
+            <div class="container mx-auto px-4 py-24 md:py-32">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-black leading-tight mb-4">
+                    Selamat Datang di Portofolio <span class="text-purple-700">Saya</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+                    Saya seorang [Profesi Anda, contoh: Pengembang Web] dengan passion dalam [Bidang minat Anda, contoh: membuat solusi digital yang inovatif].
+                </p>
+                <a href="#tentang-saya" class="inline-block bg-purple-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-purple-800 transition-all duration-300">
+                    Pelajari Lebih Lanjut
+                </a>
+            </div>
+        </section>
+
+        <!-- Tentang Saya Section -->
+        <section id="tentang-saya" class="bg-white py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-purple-700 mb-12">Tentang Saya</h2>
+                <div class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
+                    <div class="w-full md:w-1/3 text-center">
+                        <img src="https://placehold.co/300x300/e0b0ff/4B0082?text=Foto+Profil" alt="Foto Profil" class="w-48 h-48 rounded-full mx-auto object-cover shadow-xl border-4 border-purple-200">
+                    </div>
+                    <div class="w-full md:w-2/3 text-lg text-gray-800 leading-relaxed">
+                        <p class="mb-4">
+                            Saya Dafa Umar Jafri, seorang Ahli Psikologi, dengan pengalaman selama 10 tahun di bidang Psikologi. Saya bersemangat dalam Membaca,Menulis.
+                        </p>
+                        <p>
+                            Saya percaya bahwa [filosofi atau prinsip Anda, contoh: teknologi harus dapat diakses oleh semua orang, desain yang baik dapat meningkatkan pengalaman, tulisan yang kuat dapat menginspirasi perubahan]. Saya selalu mencari tantangan baru dan kesempatan untuk belajar dan berkembang.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pendidikan Section -->
+        <section id="pendidikan" class="bg-purple-50 py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-purple-700 mb-12">Pendidikan</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Pendidikan 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border border-purple-100">
+                        <h3 class="text-xl font-semibold text-purple-800 mb-2">Sarjana [Nama Jurusan]</h3>
+                        <p class="text-gray-700">Universitas [Nama Universitas], [Kota]</p>
+                        <p class="text-sm text-gray-500">Tahun [Mulai] - [Selesai]</p>
+                        <p class="text-gray-600 mt-3">Fokus pada [contoh: Pengembangan Sistem Informasi, Desain Komunikasi Visual].</p>
+                    </div>
+                    <!-- Pendidikan 2 (jika ada) -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border border-purple-100">
+                        <h3 class="text-xl font-semibold text-purple-800 mb-2">[Gelar/Sertifikasi] [Nama Bidang]</h3>
+                        <p class="text-gray-700">[Nama Institusi/Kursus Online]</p>
+                        <p class="text-sm text-gray-500">Tahun [Selesai]</p>
+                        <p class="text-gray-600 mt-3">Mempelajari [contoh: Desain UI/UX Lanjutan, Data Science dengan Python].</p>
+                    </div>
+                    <!-- Tambahkan lebih banyak pendidikan jika diperlukan -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Skill Section -->
+        <section id="skill" class="bg-white py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-purple-700 mb-12">Skill</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Kategori Skill 1 -->
+                    <div class="bg-purple-700 text-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-4">Technical Skills</h3>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li>HTML, CSS, JavaScript</li>
+                            <li>React.js, Vue.js (atau framework lain)</li>
+                            <li>Node.js, Python, PHP (atau bahasa backend lain)</li>
+                            <li>SQL, MongoDB (atau database lain)</li>
+                            <li>Git, GitHub</li>
+                        </ul>
+                    </div>
+                    <!-- Kategori Skill 2 -->
+                    <div class="bg-purple-700 text-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-4">Tools & Software</h3>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li>Visual Studio Code</li>
+                            <li>Figma, Adobe XD (untuk desain)</li>
+                            <li>Jira, Trello (untuk project management)</li>
+                            <li>Microsoft Office Suite</li>
+                        </ul>
+                    </div>
+                    <!-- Kategori Skill 3 -->
+                    <div class="bg-purple-700 text-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-4">Soft Skills</h3>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li>Problem Solving</li>
+                            <li>Kerja Sama Tim</li>
+                            <li>Komunikasi Efektif</li>
+                            <li>Manajemen Waktu</li>
+                            <li>Kreativitas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projek Section -->
+        <section id="projek" class="bg-purple-50 py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-purple-700 mb-12">Projek Saya</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Contoh Projek 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg border border-purple-100">
+                        <img src="https://placehold.co/400x250/F3E8FF/5B21B6?text=Projek+A" alt="Projek A" class="w-full h-48 object-cover rounded-md mb-4 border border-gray-200">
+                        <h3 class="text-xl font-semibold text-purple-800 mb-2">Aplikasi E-commerce Responsif</h3>
+                        <p class="text-gray-700 text-sm mb-4">
+                            Membangun platform e-commerce dengan fitur keranjang belanja, *checkout*, dan *dashboard* admin.
+                            Menggunakan React.js dan Node.js.
+                        </p>
+                        <a href="#" class="text-purple-700 hover:underline font-medium">Lihat Projek &rarr;</a>
+                    </div>
+                    <!-- Contoh Projek 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg border border-purple-100">
+                        <img src="https://placehold.co/400x250/F3E8FF/5B21B6?text=Projek+B" alt="Projek B" class="w-full h-48 object-cover rounded-md mb-4 border border-gray-200">
+                        <h3 class="text-xl font-semibold text-purple-800 mb-2">Desain UI/UX Website Perusahaan</h3>
+                        <p class="text-gray-700 text-sm mb-4">
+                            Mendesain ulang antarmuka pengguna untuk website perusahaan, fokus pada pengalaman pengguna yang intuitif.
+                            Menggunakan Figma.
+                        </p>
+                        <a href="#" class="text-purple-700 hover:underline font-medium">Lihat Projek &rarr;</a>
+                    </div>
+                    <!-- Contoh Projek 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg border border-purple-100">
+                        <img src="https://placehold.co/400x250/F3E8FF/5B21B6?text=Projek+C" alt="Projek C" class="w-full h-48 object-cover rounded-md mb-4 border border-gray-200">
+                        <h3 class="text-xl font-semibold text-purple-800 mb-2">Analisis Data Penjualan</h3>
+                        <p class="text-gray-700 text-sm mb-4">
+                            Melakukan analisis data penjualan untuk mengidentifikasi tren dan memberikan rekomendasi strategis.
+                            Menggunakan Python (Pandas, Matplotlib).
+                        </p>
+                        <a href="#" class="text-purple-700 hover:underline font-medium">Lihat Projek &rarr;</a>
+                    </div>
+                    <!-- Tambahkan lebih banyak projek jika diperlukan -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Deskripsi (Kontak) Section -->
+        <section id="deskripsi" class="bg-white py-16 md:py-24 text-center">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-black mb-6">Tertarik Berkolaborasi?</h2>
+                <p class="text-lg md:text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+                    Saya selalu terbuka untuk peluang baru dan proyek menarik. Jangan ragu untuk menghubungi saya!
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <a href="mailto:emailanda@example.com" class="bg-purple-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-purple-800 transition-colors duration-300">
+                        Email Saya
+                    </a>
+                    <a href="https://linkedin.com/in/namaanda" target="_blank" rel="noopener noreferrer" class="bg-gray-800 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-black transition-colors duration-300">
+                        LinkedIn Saya
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8 px-6 md:px-10 text-center">
+        <div class="container mx-auto">
+            <p class="text-sm">&copy; 2025 Nama Anda. Hak Cipta Dilindungi Undang-Undang.</p>
+            <p class="text-xs mt-2 text-gray-400">Dibuat dengan ❤️ dan Tailwind CSS.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Optional: Script untuk mengaktifkan mobile menu (jika ingin fungsional)
+        // const menuButton = document.querySelector('nav button');
+        // const mobileMenu = document.querySelector('nav .hidden.md:flex').parentNode; // Assuming the parent is the container
+        // menuButton.addEventListener('click', () => {
+        //     mobileMenu.classList.toggle('hidden');
+        //     mobileMenu.classList.toggle('flex');
+        //     mobileMenu.classList.toggle('flex-col'); // Add flex-col for stacking links
+        //     mobileMenu.classList.toggle('items-center');
+        //     mobileMenu.classList.toggle('w-full');
+        //     mobileMenu.classList.toggle('py-4');
+        //     mobileMenu.classList.toggle('bg-white');
+        // });
+        // Catatan: Implementasi menu mobile yang lengkap mungkin memerlukan penyesuaian CSS lebih lanjut.
+    </script>
+</body>
+</html>
